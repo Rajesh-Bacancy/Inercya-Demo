@@ -1,0 +1,18 @@
+<ul>
+  <ng-container
+    *ngTemplateOutlet="recursiveListTmpl; context:{ list: list }"
+  ></ng-container>
+</ul>
+
+<ng-template #recursiveListTmpl let-list="list">
+  <li *ngFor="let item of list">
+    {{ item.Name }}
+    <ul *ngIf="item.Children.length > 0">
+      <ng-container
+        *ngTemplateOutlet="recursiveListTmpl; context:{ list: item.Children }"
+      ></ng-container>
+    </ul>
+  </li>
+</ng-template>
+
+ 

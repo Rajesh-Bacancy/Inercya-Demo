@@ -1,0 +1,17 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Customers/.vs
+/Customers/Customers/obj
+/Customers/Customers/bin/Debug/net6.0
+/Random/Random/obj
+/Random/Random/bin/Debug/net6.0
+/Random/.vs
+/.vs
+
+/WebTreeView/.angular/cache/16.1.5
+/WebTreeView/.vscode
+/Catalog/Catalog/obj
+/Catalog/Catalog/bin/Debug/net6.0
+/Catalog/.vs
